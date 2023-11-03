@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- *HTML Attribute using <input></input> Tag*
+        1:- required
+        2:- pattern="/^[A-Za]*\s{1}[A-Za-z]*$/"
+        3:- min
+        4:- max 
+    -->
+    <div class="container">
+        <div class="box">
+            <header class="signup-header">
+                <h1>SignUp</h1>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Type Name Here" id="name"/>
+                        <i class="fa-solid"></i>
+                        <span id="nameError"></span>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="xyz@gamil.com" id="email"/>
+                        <i class="fa-solid"></i>
+                        <span id="emailError"></span>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="At-least 8 character" id="password"/>
+                        <i class="fa-solid"></i>
+                        <span id="passwordError"></span>
+                    </p>
+                    <p>
+                        <input type="submit" value="Create Account" id="submitBtn"/>
+                    </p>
+                </form>
+            </main>
+            <footer class="signup-footer">
+                <p>Already have an account?<a href="">Login</a></p>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/13cce66012.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
